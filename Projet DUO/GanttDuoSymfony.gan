@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-02-07" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.10" locale="fr">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="276" order="0"/>
+        <field id="tpd4" name="Date de début" width="42" order="1"/>
+        <field id="tpd5" name="Date de fin" width="99" order="2"/>
+        <option id="color.recent"><![CDATA[#ff6633 #00ccff #ffff00 #ffff33 #ff00ff #ff33ff #ff33cc #ff66ff #33ff33 #00ff00]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Réunion de conception" color="#ff0033" meeting="true" start="2020-02-07" duration="0" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Cahier des charges" color="#ff3333" meeting="false" start="2020-02-07" duration="1" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Spécification fonnctionelle" color="#8cb6ce" meeting="false" start="2020-02-07" duration="1" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true">
+            <task id="8" name="Arborescence des pages" color="#3333ff" meeting="false" start="2020-02-07" duration="1" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+            <task id="11" name="Définition des fonctionnalités" color="#3333ff" meeting="false" start="2020-02-07" duration="1" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="12" name="Spécification technique" color="#000000" meeting="false" start="2020-02-07" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true">
+            <task id="13" name="Maquette visuel" color="#00ff00" meeting="false" start="2020-02-07" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="Installation environnement de dév" color="#33ff33" meeting="false" start="2020-02-07" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+            <task id="15" name="Schématisation de la BDD" color="#33ff33" meeting="false" start="2020-02-07" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="16" name="Réalisation" color="#000000" meeting="false" start="2020-02-10" duration="8" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true">
+            <depend id="25" type="1" difference="0" hardness="Strong"/>
+            <task id="17" name="Mise en place des fonctionnalités (MC)" color="#8cb6ce" meeting="false" start="2020-02-10" duration="8" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true">
+                <task id="51" name="Mise en place de la BDD" color="#ff00ff" meeting="false" start="2020-02-10" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+                <task id="38" name="Interface d'affichage" color="#ff00ff" meeting="false" start="2020-02-10" duration="3" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+                <task id="19" name="Ajout/Modification" color="#ff00ff" meeting="false" start="2020-02-12" duration="3" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+                <task id="122" name="Sécurité&amp;Conditions" color="#8cb6ce" meeting="false" start="2020-02-18" duration="2" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="20" name="Mise en place de l'arborescense" color="#8cb6ce" meeting="false" start="2020-02-13" duration="4" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true">
+                <task id="43" name="Création des vues" color="#ffff33" meeting="false" start="2020-02-13" duration="3" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+                <task id="44" name="Mise en place des chemins" color="#ffff00" meeting="false" start="2020-02-13" duration="4" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="25" name="Phase de tests" color="#00ccff" meeting="false" start="2020-02-10" duration="10" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+        <task id="121" name="Document de synthèse" color="#ff6633" meeting="false" start="2020-02-07" duration="13" complete="0" thirdDate="2020-02-07" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
